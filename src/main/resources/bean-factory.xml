@@ -1,0 +1,15 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="plusService" class="org.example.XML.PlusService">
+    </bean>
+
+    <bean id="minusService" class="org.example.XML.MinusService">
+    </bean>
+
+    <bean id="calculator" class="org.example.XML.Calculator">
+        <constructor-arg ref="minusService"/>
+        <constructor-arg ref="plusService"/>
+    </bean>
+</beans>
