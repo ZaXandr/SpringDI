@@ -1,4 +1,4 @@
-package org.example.XML;
+package org.example.javaConfig;
 
 public class Calculator {
     private final MinusService minusService;

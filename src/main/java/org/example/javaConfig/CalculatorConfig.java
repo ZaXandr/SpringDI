@@ -6,20 +6,20 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class CalculatorConfig {
     @Bean
-    public PlusService2 plusService2() {
-        PlusService2 plusService2 = new PlusService2();
-        return plusService2;
+    public PlusService plusService() {
+        PlusService plusService = new PlusService();
+        return plusService;
     }
 
     @Bean
-    public MinusService2 minusService2() {
-        MinusService2 minusService2 = new MinusService2();
-        return minusService2;
+    public MinusService minusService() {
+        MinusService minusService = new MinusService();
+        return minusService;
     }
 
     @Bean
-    public Calculator2 calculator2(){
-        Calculator2 calculator2 = new Calculator2(minusService2(),plusService2());
-        return calculator2;
+    public Calculator calculator(){
+        Calculator calculator = new Calculator(minusService(),plusService());
+        return calculator;
     }
 }
