@@ -1,5 +1,8 @@
-package org.example.XML;
+package com.zakharov.annotation;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Calculator {
     private final MinusService minusService;
     private final PlusService plusService;
