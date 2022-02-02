@@ -1,4 +1,4 @@
-package com.zakharov.XML;
+package com.zakharov.javaconfig;
 
 public class Calculator {
     private final MinusService minusService;
